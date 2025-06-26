@@ -1,0 +1,83 @@
+l<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maaf ya...</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+    body {
+      background: linear-gradient(to bottom right, #fdf6f0, #fdeee8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      max-width: 400px;
+      width: 100%;
+      animation: fadeIn 1s ease;
+    }
+    h1 {
+      font-size: 2em;
+      color: #ff7979;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #555;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #ff7979;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #e76e6e;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @media screen and (max-width: 480px) {
+      h1 { font-size: 1.5em; }
+      p { font-size: 1em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Maaf ya...</h1>
+    <p>
+      Aku tahu tadi malam aku bikin kamu kecewa.<br />
+      Aku grogi dan nggak bisa ngelakuin yang kamu minta.<br />
+      Tapi bukan berarti aku nggak mau, aku cuma takut salah.<br /><br />
+      Maaf ya... aku cuma manusia biasa yang masih belajar.
+    </p>
+    <button onclick="alert('Terima kasih udah baca... 😊')">Aku Beneran Minta Maaf</button>
+  </div>
+</body>
+</html>
